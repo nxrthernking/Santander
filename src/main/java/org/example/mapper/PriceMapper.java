@@ -1,4 +1,7 @@
-package org.example;
+package org.example.mapper;
+
+import org.example.model.Price;
+import org.example.model.dto.PriceDto;
 
 public class PriceMapper extends Mapper<Price, PriceDto> {
 

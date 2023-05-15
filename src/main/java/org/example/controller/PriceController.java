@@ -1,4 +1,7 @@
-package org.example;
+package org.example.controller;
+
+import org.example.model.dto.PriceDto;
+import org.example.service.PriceService;
 
 public class PriceController {
 

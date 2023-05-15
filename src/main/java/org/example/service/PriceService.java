@@ -1,4 +1,8 @@
-package org.example;
+package org.example.service;
+
+import org.example.mapper.PriceMapper;
+import org.example.model.dto.PriceDto;
+import org.example.repository.PriceRepository;
 
 public class PriceService {
     private final PriceRepository repository;
@@ -12,6 +16,10 @@ public class PriceService {
 
     public PriceDto getLastPrice() {
         return mapper.mapEntity(repository.getLastPrice());
+    }
+
+    public void save(PriceDto dto) {
+        repository.save(mapper.mapDto(dto));
     }
 
 }

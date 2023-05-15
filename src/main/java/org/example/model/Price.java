@@ -1,4 +1,4 @@
-package org.example;
+package org.example.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -10,9 +10,9 @@ import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @Builder
-@Getter
 @ToString
-public class PriceDto {
+@Getter
+public class Price {
     private String id;
     private String instrumentName;
     private BigDecimal bid;

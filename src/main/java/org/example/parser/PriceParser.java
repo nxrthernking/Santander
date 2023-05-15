@@ -1,10 +1,10 @@
-package org.example;
+package org.example.parser;
+
+import org.example.model.Price;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Arrays;
-import java.util.List;
 
 public class PriceParser {
 
@@ -24,7 +24,6 @@ public class PriceParser {
         String instrumentName = parts[INSTRUMENT_NAME].trim();
         BigDecimal bid = new BigDecimal(parts[BID].trim());
         BigDecimal ask = new BigDecimal(parts[ASK].trim());
-        String trim = parts[TIMESTAMP].trim();
         LocalDateTime timestamp = LocalDateTime.parse(parts[TIMESTAMP].trim(), format);
         return new Price(id, instrumentName, bid, ask, timestamp);
     }

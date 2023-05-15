@@ -1,4 +1,4 @@
-package org.example;
+package org.example.mapper;
 
 import java.util.Collection;
 import java.util.stream.Collector;
